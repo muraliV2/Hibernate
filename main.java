@@ -1,38 +1,33 @@
-package com.jspiders.hibernate.demo;
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+
+    <persistence-unit name="development">
+
+        <class>com.jspiders.hibernate.Student</class>
+
+        <properties>
+
+            <!-- JDBC -->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.mysql.cj.jdbc.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:mysql://localhost:3306/mydb?createDatabaseIfNotExist=true"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="root"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="Murali@6492"/>
 
 
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
 
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
 
-import java.sql.DriverManager;
-
-import com.jspiders.hibernate.demo.*;
-
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
-
-public class Mainclas 
-{
-public static void main(String [] args)
-{
-	EntityManagerFactory factory =Persistence.createEntityManagerFactory("development");
-	EntityManager manager = factory.createEntityManager();
-	EntityTransaction transaction = manager.getTransaction();
-	Student s1 = new Student();
-	s1.setRollno(1);
-	s1.setName("ramesh");
-	s1.setContact("1234567890");
-	s1.setAge(23);
-	transaction.begin();
-	manager.persist(s1);
-	transaction.commit();
-	
-	
-	
-	
-}
-}
-
-
-//entity manager
+        </properties>
+    </persistence-unit>
+</persistence>
