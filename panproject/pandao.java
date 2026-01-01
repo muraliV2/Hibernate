@@ -58,4 +58,13 @@ public class PanDao {
     	}
     	
     }
+    
+    public static void deletedata(int PanId)
+    {
+    	pancard card = manager.find(pancard.class, PanId);
+    	transaction.begin();
+        manager.remove(card);
+        transaction.commit();
+    	
+    }
 }
