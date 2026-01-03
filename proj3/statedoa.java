@@ -2,8 +2,6 @@ package com.hinernate.dto;
 
 import com.hibernate.dto.capital;
 import com.hibernate.dto.state;
-import com.hibernate.dto.user;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
@@ -15,23 +13,32 @@ static EntityManagerFactory factory = Persistence.createEntityManagerFactory("de
 static EntityManager manager = factory.createEntityManager();
 static EntityTransaction transaction = manager.getTransaction();
 
-public static void insertdata(int StateId,String StateName,String StateCode,String CountryName,int CapitalId)
+public static void insertdata(
+        int StateId,
+        String StateName,
+        String StateCode,
+        String CountryName,
+        int CapitalId)
 {
-	
-	state st = new state();
-	st.setStateId(StateId);
-	st.setStateName(StateName);
-	st.setStateCode(StateCode);
-	st.setCountryName(CountryName);
-	
-	capital capital = manager.find(capital.class, CapitalId);
- 	if(capital != null)
- 		capital.setCapitalId(CapitalId);
- 	 st.setCapital(CapitalId);  
- 	transaction.begin();
-  	manager.persist(capital);
-  	transaction.commit();
+    transaction.begin();
+
+    capital cap = manager.find(capital.class, CapitalId);
+    if (cap == null) {
+        System.out.println("Capital not found");
+        
+    }
+
+    state st = new state();
+    st.setStateId(StateId);
+    st.setStateName(StateName);
+    st.setStateCode(StateCode);
+    st.setCountryName(CountryName);
+    st.setCapital(cap);          // ✅ LINK ENTITY
+
+    manager.persist(st);         // ✅ PERSIST STATE
+    transaction.commit();
 }
+
 public static void updatedata(int StateId,String StateName,String StateCode,String CountryName)
 {
 state st = manager.find(state.class, StateId);
