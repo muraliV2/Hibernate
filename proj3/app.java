@@ -9,7 +9,9 @@ import com.hinernate.dto.stateDao;
  */
 public class App {
     public static void main(String[] args) {
-    	stateDao.delete(3);
-    	capitalDao.deletedata(3);
+//    	capitalDao.insertdate(7, "goa", 1);
+    	stateDao.insertdata(6, "madhya pradesh", "md", "India", 7);
+    	
+    	
     }
 }
