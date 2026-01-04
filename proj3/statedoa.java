@@ -13,12 +13,7 @@ static EntityManagerFactory factory = Persistence.createEntityManagerFactory("de
 static EntityManager manager = factory.createEntityManager();
 static EntityTransaction transaction = manager.getTransaction();
 
-public static void insertdata(
-        int StateId,
-        String StateName,
-        String StateCode,
-        String CountryName,
-        int CapitalId)
+public static void insertdata(int StateId,String StateName,String StateCode, String CountryName,int CapitalId)    
 {
     transaction.begin();
 
@@ -33,9 +28,10 @@ public static void insertdata(
     st.setStateName(StateName);
     st.setStateCode(StateCode);
     st.setCountryName(CountryName);
-    st.setCapital(cap);          // ✅ LINK ENTITY
+    st.setCapital(cap);          
+   
 
-    manager.persist(st);         // ✅ PERSIST STATE
+    manager.persist(st);        
     transaction.commit();
 }
 
