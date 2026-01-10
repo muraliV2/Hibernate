@@ -19,7 +19,7 @@
                       value="root"/>
 
             <property name="jakarta.persistence.jdbc.password"
-                      value="Murali@6492 "/>
+                      value="M92 "/>
 
 
             <property name="hibernate.hbm2ddl.auto"
