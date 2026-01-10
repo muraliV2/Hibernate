@@ -37,7 +37,7 @@ public static void insertdata(int ProductId,String name,String type,int price,in
 	transaction.begin();
 	manager.persist(comp);
 	manager.persist(products);
-	transaction.commit();
+	transaction.commit() ;
 	
 }
 public static void delete(int ProductId)
