@@ -9,7 +9,7 @@ public class product
 	@Id
 private int ProductId;
 private String name;
-private String type;
+private String type ;
 private int price;
 private int Quantity;
 public int getProductId() {
