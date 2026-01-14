@@ -1,5 +1,7 @@
 package com.hibernate.dto;
 
+import java.util.List;
+
 import javax.sound.midi.Transmitter;
 
 import com.hibernate.dao.college;
@@ -25,11 +27,32 @@ public static void insert(int studentId,String studentName,int year,int collegeI
 	college cg = manager.find(college.class, collegeId);
 	
 		
-		st.setClg(cg);
+		
 		transaction.begin();
 		manager.persist(st);
 		transaction.commit();
 	
 }
+public static void printCollegeByStudent(int studentId)
+{
+    student st = manager.find(student.class, studentId);
+
+    if (st == null) {
+        System.out.println("Student not found");
+        return;
+    }
+
+    college c = st.getClg();
+
+    if (c == null) {
+        System.out.println("College not assigned");
+        return;
+    }
+    System.out.println(st.getStudentName());
+    System.out.println(c.getCollegeName());
+    System.out.println(c.getLocation());
+    System.out.println(c.getCity());
+}
+
 
 }
