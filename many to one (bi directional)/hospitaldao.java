@@ -24,7 +24,7 @@ public static void insertdata(int hospitalId,String hospitalName,String location
 	hd.setLocation(location);
 	transaction.begin();
 	manager.persist(hd);
-	transaction.commit();
+	transaction.commit() ;
 }
 
 public static void read(int hospitalId)
