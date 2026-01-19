@@ -12,8 +12,7 @@ public class App {
 //    	hospitaldao.insertdata(102, "AIIMS", "New Delhi");
 //    	hospitaldao.insertdata(103, "KIMS Hospital", "Hyderabad")
 
-//    	doctordao.insertdata(4, "Dr. Anil", 50, "Male", 101);
-//    	doctordao.insertdata(5, "Dr. Priya", 32, "Female", 101);
+
 //
 //    	doctordao.insertdata(6, "Dr. Kumar", 42, "Male", 102);
 //    	doctordao.insertdata(7, "Dr. Neha", 38, "Female", 102);
