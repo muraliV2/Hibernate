@@ -27,4 +27,26 @@ public class customerdto
 	 
 	 
  }
+public static void getorder(int customerid)
+{
+customer cust = manager.find(customer.class, customerid);
+if(cust != null)
+{
+	 List<ordertab> or = cust.getList();
+	 for(ordertab o : or)
+	 {
+		 
+		Delivery d = o.getDel();
+		List<products> pw = o.getProduct();
+		for(products p : pw)
+		{
+		 
+		 System.out.println(o.getOrderid() + " " + o.getOrderdate() + " " + d.getDeliveryid() + " " + d.getStatus() + " " + d.getType() + " " + p.getCategoryid() + " "+p.getProductname() + " " + p.getProductid());
+	 }
+	 }
 }
+
+
+}
+}
+
