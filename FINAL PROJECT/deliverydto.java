@@ -27,4 +27,19 @@ del.setStatus(status);
 manager.persist(del);
 transaction.commit();
 }
+
+public static void updatestatus(int deliveryId,String status)
+{
+
+	Delivery dele = manager.find(Delivery.class, deliveryId);
+	
+	dele.setStatus(status);
+	
+	
+	transaction.begin();
+	
+	transaction.commit();
+
+	
+}
 }
