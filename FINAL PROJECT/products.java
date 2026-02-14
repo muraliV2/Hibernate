@@ -27,6 +27,7 @@ public String getCategoryid() {
 public void setCategoryid(String categoryid) {
 	this.categoryid = categoryid;
 }
+
 private String categoryid;
 }
 
