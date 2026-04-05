@@ -1,7 +1,6 @@
 package com.hibernate.dto;
 
 import com.hibernate.dao.customer;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
