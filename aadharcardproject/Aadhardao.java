@@ -20,7 +20,7 @@ public class AadharDao
  	adhar.setDob(dob);	
  	user user = manager.find(user.class, userId);
  	if(user != null)
- 		user.setAdhar(adhar);
+ 	user.setAdhar(adhar);
  	transaction.begin();
   	manager.persist(adhar);
   	transaction.commit();
