@@ -24,7 +24,6 @@ public class AadharDao
  		user.setAdhar(adhar);
  	transaction.begin();
   	manager.persist(adhar);
-  	transaction.commit();	
-
+  	transaction.commit();
  }
 }
