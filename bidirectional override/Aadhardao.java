@@ -1,5 +1,4 @@
 package com.hibernate.dao;
-
 import com.hibernate.dto.Adharcard;
 import com.hibernate.dto.user;
 
