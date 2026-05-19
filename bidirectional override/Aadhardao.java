@@ -67,8 +67,7 @@ public class AadharDao
 	 else
 	 {
 		 System.out.println("check the querry");
-	 }
-	 
+	 }	 
  }
  public static void finddata(int AadharId)
  {
