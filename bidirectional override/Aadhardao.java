@@ -1,7 +1,6 @@
 package com.hibernate.dao;
 import com.hibernate.dto.Adharcard;
 import com.hibernate.dto.user;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
