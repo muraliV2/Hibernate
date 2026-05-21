@@ -1,5 +1,4 @@
 package com.hibernate.dao;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,6 @@ private int customerid;
 private String name;
 private String Email;
 private String Address;
-
 private List<order> orders = new ArrayList<order>();
 @OneToMany
 public int getCustomerid() {
