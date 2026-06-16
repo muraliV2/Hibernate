@@ -1,5 +1,4 @@
 package com.hibernate.manyne;
-
 import com.hibernate.dao.doctordao;
 import com.hibernate.dao.hospitaldao;
 public class App {
