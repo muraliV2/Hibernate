@@ -3,9 +3,6 @@ package com.hibernate.manyne;
 import com.hibernate.dao.doctordao;
 import com.hibernate.dao.hospitaldao;
 
-/**
- * Hello world!
- */
 public class App {
     public static void main(String[] args) {
 //    	hospitaldao.insertdata(101, "Fortis Hospital", "Bangalore");
