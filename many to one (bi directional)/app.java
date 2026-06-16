@@ -5,7 +5,6 @@ public class App {
     public static void main(String[] args) {
 //    	hospitaldao.insertdata(101, "Fortis Hospital", "Bangalore");
 //    	hospitaldao.insertdata(102, "AIIMS", "New Delhi");
-//    	doctordao.insertdata(8, "Dr. Ravi", 46, "Male", 103);
 
     	
     	hospitaldao.read(101);
