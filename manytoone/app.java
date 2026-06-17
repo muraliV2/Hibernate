@@ -6,7 +6,7 @@ import com.qsp.dto.department;
 
 /**
  * Hello world!
- */
+
 public class App {
     public static void main(String[] args) {
     	departmentdao.insertdata(40, "hotel", "chennai");
