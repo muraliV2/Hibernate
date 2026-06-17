@@ -1,5 +1,4 @@
 package com.qsp.ontomany;
-
 import com.qsp.dao.departmentdao;
 import com.qsp.dao.employeedao;
 import com.qsp.dto.department;
