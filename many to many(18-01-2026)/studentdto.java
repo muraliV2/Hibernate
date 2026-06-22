@@ -22,7 +22,6 @@ s.setAge(age);
 s.setGender(gender);
 
 
-
 transaction.begin();
 manager.persist(s);
 transaction.commit();
