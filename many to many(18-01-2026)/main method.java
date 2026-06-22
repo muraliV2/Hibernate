@@ -2,7 +2,6 @@ package com.hibernate.manyman;
 
 import com.hibernate.dto.coursedto;
 import com.hibernate.dto.studentdto;
-
 public class App {
     public static void main(String[] args) {
 //    	apStudentCourse(101, 1);
