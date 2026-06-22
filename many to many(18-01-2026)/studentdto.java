@@ -1,7 +1,6 @@
 package com.hibernate.dto;
 
 import java.util.List;
-
 import com.hibernate.dao.course;
 import com.hibernate.dao.student;
 
