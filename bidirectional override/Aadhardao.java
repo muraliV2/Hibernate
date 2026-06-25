@@ -18,7 +18,6 @@ public class AadharDao
  	adhar.setName(name);
  	adhar.setGender(gender);
  	adhar.setDob(dob);
- 	
  	user user = manager.find(user.class, userId);
  	if(user != null)
  		user.setAdhar(adhar);
