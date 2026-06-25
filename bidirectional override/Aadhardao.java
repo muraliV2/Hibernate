@@ -31,7 +31,6 @@ public class AadharDao
 	 Adharcard existingdata = manager.find(Adharcard.class, AadharId);
 	 if(existingdata != null)
 	 {
-		 
 		 transaction.begin();
 		 existingdata.setAaadharNumber(AadharNumber);
 		 existingdata.setName(name);
