@@ -49,6 +49,5 @@ public int getAadharId() {
 	public void setDob(String dob) {
 		this.dob = dob;
 	}
-
 }
 ??
