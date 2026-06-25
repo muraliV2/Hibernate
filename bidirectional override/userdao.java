@@ -29,8 +29,7 @@ public class UserDao
   	manager.persist(user);
   	transaction.commit();
   	
-  	
-    
+  	  
   }
   public static void UpdateUser(int userId,
           String userName,
