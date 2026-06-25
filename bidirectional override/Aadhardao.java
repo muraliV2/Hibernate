@@ -27,7 +27,6 @@ public class AadharDao
   	transaction.commit();
   	
  	
-
  }
  public static void updatedata(int AadharId,long AadharNumber,String name,String gender,String dob,int userId)
  {
