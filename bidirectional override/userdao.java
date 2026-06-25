@@ -21,8 +21,7 @@ public class UserDao
   	user.setDateOfBirth(DateOfBirth);
   	user.setAddress(Address);
   	user.setEmail(email);
-  	user.setContact(Contact);
-  	
+  	user.setContact(Contact);  	
   	Adharcard adhar = manager.find(Adharcard.class, AadharId);
  	if(adhar != null)
  		adhar.setUser(user);
