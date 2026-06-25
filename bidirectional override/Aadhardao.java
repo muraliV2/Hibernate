@@ -38,7 +38,6 @@ public class AadharDao
 		 existingdata.setDob(dob);
 		 existingdata.setAadharId(AadharId);
 	 }
-	 
  }
  public static void read(int AadharId)
  {
