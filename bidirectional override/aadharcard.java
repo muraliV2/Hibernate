@@ -21,7 +21,6 @@ public user getUser() {
 	}
 public int getAadharId() {
 		return AadharId;
-		
 	}
 	public void setAadharId(int aadharId) {
 		AadharId = aadharId;
