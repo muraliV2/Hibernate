@@ -24,8 +24,7 @@ public class AadharDao
  		user.setAdhar(adhar);
  	transaction.begin();
   	manager.persist(adhar);
-  	transaction.commit();
-  	
+  	transaction.commit();  	
  }
  public static void updatedata(int AadharId,long AadharNumber,String name,String gender,String dob,int userId)
  {
