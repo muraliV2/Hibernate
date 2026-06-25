@@ -57,5 +57,4 @@ public long getContact() {
 public void setContact(long contact) {
 	Contact = contact;
 }
-
 }
