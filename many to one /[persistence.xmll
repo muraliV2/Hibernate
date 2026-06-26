@@ -6,7 +6,6 @@
         <!-- Your entity classes -->
         <class>com.hibernate.dto.library</class>
         <class>com.hibernate.dto.Book</class>
-
         <properties>
             <!-- JDBC -->
             <property name="jakarta.persistence.jdbc.driver"
