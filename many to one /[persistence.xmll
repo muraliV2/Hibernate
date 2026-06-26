@@ -15,7 +15,6 @@
                       value="root"/>
             <property name="jakarta.persistence.jdbc.password"
                       value="Murali@6492"/>
-
             <!-- Hibernate -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
