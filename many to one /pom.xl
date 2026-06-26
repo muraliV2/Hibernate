@@ -4,7 +4,7 @@
 
     <persistence-unit name="development">
 
-        <!-- Your entity classes -->
+      
         <class>com.hibernate.dto.library</class>
         <class>com.hibernate.dto.Book</class>
 
