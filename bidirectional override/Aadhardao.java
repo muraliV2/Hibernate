@@ -64,6 +64,6 @@ public class AadharDao
  {
 	 Adharcard card = manager.find(Adharcard.class, AadharId);
 	 user user = card.getUser();
-	 System.out.println(user.getUserId() + "  " + user.getUserName() + "  " + user.getAddress() + "  " + user.getDateOfBirth());	 
+	 System.out.println(user.getUserId() + "  " + user.getUserName() + "   " + user.getAddress() + "  " + user.getDateOfBirth());	 
  }
 }
