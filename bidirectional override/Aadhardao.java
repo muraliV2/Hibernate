@@ -43,7 +43,7 @@ public class AadharDao
 	 Adharcard read = manager.find(Adharcard.class, AadharId);
 	 if(read != null)
 	 {
-		 System.out.println(read.getAaadharNumber() + "  " + read.getName() + "  " + read.getGender() + "  " + read.getDob() + " " + read.getAadharId());
+		 System.out.println(read.getAaadharNumber() + "  " + read.getName() + "  " + read.getGender() + "  " + read.getDob() + "  " + read.getAadharId());
 	 }
  }
  public static void deletedata(int AadharId)
