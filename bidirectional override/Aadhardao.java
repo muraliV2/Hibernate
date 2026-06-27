@@ -7,7 +7,7 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 public class AadharDao 
 {
-	 static EntityManagerFactory factory = Persistence.createEntityManagerFactory("development");
+	 static EntityManagerFactory factory = Persistence.createEntityManagerFactory("developments");
 	  static EntityManager manager = factory.createEntityManager();
 	  static EntityTransaction transaction = manager.getTransaction();
  public static void InsertAadhar(int AadharId,long AadharNumber,String name,String gender,String dob,int userId)
