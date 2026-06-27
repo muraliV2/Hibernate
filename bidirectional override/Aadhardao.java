@@ -57,7 +57,7 @@ public class AadharDao
 	 }
 	 else
 	 {
-		 System.out.println("check the querry");
+		 System.out.println("check all the querry");
 	 }	 
  }
  public static void finddata(int AadharId)
