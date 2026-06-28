@@ -1,5 +1,4 @@
 package com.hibernate.dto;
-
 import java.util.List;
 
 import javax.sound.midi.Transmitter;
