@@ -5,7 +5,6 @@ import java.util.List;
 import javax.sound.midi.Transmitter;
 import com.hibernate.dao.college;
 import com.hibernate.dao.student;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
