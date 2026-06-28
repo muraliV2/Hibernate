@@ -19,7 +19,6 @@ public static void insert(int studentId,String studentName,int year,int collegeI
 	st.setStudentName(studentName);
 	st.setYear(year);
 	college cg = manager.find(college.class, collegeId);
-	
 		
 		
 		transaction.begin();
