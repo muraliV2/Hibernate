@@ -9,7 +9,6 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 import jakarta.transaction.Transaction;
 public class studentdto {
-
 static EntityManagerFactory factory = Persistence.createEntityManagerFactory("development");
 static EntityManager manager = factory.createEntityManager();
 static EntityTransaction transaction = manager.getTransaction();
