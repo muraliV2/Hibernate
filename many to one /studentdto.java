@@ -24,7 +24,6 @@ public static void insert(int studentId,String studentName,int year,int collegeI
 		transaction.begin();
 		manager.persist(st);
 		transaction.commit();
-	
 }
 public static void printCollegeByStudent(int studentId)
 {
