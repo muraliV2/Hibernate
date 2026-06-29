@@ -8,9 +8,6 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 
-/**
- * Hello world!
- */
 public class App {
 	
 
