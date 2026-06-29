@@ -1,5 +1,4 @@
 package com.hibernate.mappingdemo;
-
 import com.hibernate.dao.AadharDao;
 import com.hibernate.dao.UserDao;
 import com.hibernate.dto.user;
