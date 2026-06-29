@@ -2,7 +2,6 @@ package com.hibernate.mappingdemo;
 import com.hibernate.dao.AadharDao;
 import com.hibernate.dao.UserDao;
 import com.hibernate.dto.user;
-
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
