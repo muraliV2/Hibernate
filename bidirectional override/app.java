@@ -8,7 +8,6 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
 public class App {
 	
-
     public static void main(String [] args)
     { 	
     	AadharDao.finddata(2);
