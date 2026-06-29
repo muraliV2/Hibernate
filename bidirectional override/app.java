@@ -12,7 +12,6 @@ public class App {
 
     public static void main(String [] args)
     {
-//  UserDao.InsertUser(2, "ronalod", "31-jul-2000","portugal hotel", "ronalodpepe@gmail.com", 7070, 2);
     	
     	AadharDao.finddata(2);
   
