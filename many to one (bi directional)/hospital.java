@@ -14,7 +14,6 @@ public class hospital
     @OneToMany
    private  List<doctor> list = new ArrayList<doctor>();
 	    
-	
 		public List<doctor> getList() {
 		return list;
 	}
