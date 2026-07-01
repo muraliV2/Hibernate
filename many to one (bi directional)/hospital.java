@@ -10,7 +10,7 @@ public class hospital
 	@Id
 	 private int hospitalId;
 	private String hospitalName;
-    private String location;
+   private String location;
     @OneToMany
    private  List<doctor> list = new ArrayList<doctor>();	    
 		public List<doctor> getList() {
