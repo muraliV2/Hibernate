@@ -12,8 +12,7 @@ public class hospital
 	private String hospitalName;
     private String location;
     @OneToMany
-   private  List<doctor> list = new ArrayList<doctor>();
-	    
+   private  List<doctor> list = new ArrayList<doctor>();	    
 		public List<doctor> getList() {
 		return list;
 	}
